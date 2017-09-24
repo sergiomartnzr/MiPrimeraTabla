@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED8CD2891F77322300AC8D97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD2881F77322300AC8D97 /* main.m */; };
 		ED8CD28C1F77322300AC8D97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD28B1F77322300AC8D97 /* AppDelegate.m */; };
-		ED8CD28F1F77322300AC8D97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD28E1F77322300AC8D97 /* ViewController.m */; };
+		ED8CD28F1F77322300AC8D97 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD28E1F77322300AC8D97 /* Home.m */; };
 		ED8CD2921F77322300AC8D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2901F77322300AC8D97 /* Main.storyboard */; };
 		ED8CD2951F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD2931F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld */; };
 		ED8CD2971F77322300AC8D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2961F77322300AC8D97 /* Assets.xcassets */; };
@@ -19,10 +19,10 @@
 /* Begin PBXFileReference section */
 		ED8CD2841F77322300AC8D97 /* Mi Primera Tabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Primera Tabla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8CD2881F77322300AC8D97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ED8CD28A1F77322300AC8D97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ED8CD28B1F77322300AC8D97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED8CD28D1F77322300AC8D97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED8CD28E1F77322300AC8D97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED8CD28A1F77322300AC8D97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Mi Primera Tabla/AppDelegate.h"; sourceTree = "<group>"; };
+		ED8CD28B1F77322300AC8D97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Mi Primera Tabla/AppDelegate.m"; sourceTree = "<group>"; };
+		ED8CD28D1F77322300AC8D97 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Home.h; path = "Mi Primera Tabla/Home.h"; sourceTree = "<group>"; };
+		ED8CD28E1F77322300AC8D97 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Home.m; path = "Mi Primera Tabla/Home.m"; sourceTree = "<group>"; };
 		ED8CD2911F77322300AC8D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED8CD2941F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_Primera_Tabla.xcdatamodel; sourceTree = "<group>"; };
 		ED8CD2961F77322300AC8D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		ED8CD27B1F77322300AC8D97 = {
 			isa = PBXGroup;
 			children = (
+				ED8CD2A11F77324F00AC8D97 /* Main */,
+				ED8CD2A21F77329200AC8D97 /* Controllers */,
 				ED8CD2861F77322300AC8D97 /* Mi Primera Tabla */,
 				ED8CD2851F77322300AC8D97 /* Products */,
 			);
@@ -60,10 +62,6 @@
 		ED8CD2861F77322300AC8D97 /* Mi Primera Tabla */ = {
 			isa = PBXGroup;
 			children = (
-				ED8CD28A1F77322300AC8D97 /* AppDelegate.h */,
-				ED8CD28B1F77322300AC8D97 /* AppDelegate.m */,
-				ED8CD28D1F77322300AC8D97 /* ViewController.h */,
-				ED8CD28E1F77322300AC8D97 /* ViewController.m */,
 				ED8CD2901F77322300AC8D97 /* Main.storyboard */,
 				ED8CD2961F77322300AC8D97 /* Assets.xcassets */,
 				ED8CD2981F77322300AC8D97 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				ED8CD2881F77322300AC8D97 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED8CD2A11F77324F00AC8D97 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ED8CD28A1F77322300AC8D97 /* AppDelegate.h */,
+				ED8CD28B1F77322300AC8D97 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		ED8CD2A21F77329200AC8D97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED8CD28D1F77322300AC8D97 /* Home.h */,
+				ED8CD28E1F77322300AC8D97 /* Home.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8CD28F1F77322300AC8D97 /* ViewController.m in Sources */,
+				ED8CD28F1F77322300AC8D97 /* Home.m in Sources */,
 				ED8CD2951F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld in Sources */,
 				ED8CD28C1F77322300AC8D97 /* AppDelegate.m in Sources */,
 				ED8CD2891F77322300AC8D97 /* main.m in Sources */,
