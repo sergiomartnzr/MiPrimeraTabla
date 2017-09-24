@@ -82,10 +82,38 @@
 #pragma mark - Action methods
 /**********************************************************************************************/
 - (IBAction)btnAddPressed:(id)sender {
-    [self.userNames addObject:@"Sergio"];
-    [self.userAges addObject:@"25 años"];
-    [self.userImages addObject:@"jon.jpg"];
-    [self.tbMain reloadData];
+
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Character data"
+                                                                              message: @"Input Chanracter's name and age"
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"name";
+        textField.textColor = [UIColor blueColor];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"age";
+        textField.textColor = [UIColor blueColor];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSArray * textfields = alertController.textFields;
+        UITextField * nameField = textfields[0];
+        UITextField * ageFiled = textfields[1];
+        NSLog(@"------------------%@:----------------------%@",nameField.text,ageFiled.text);
+        
+        [self.userNames addObject:nameField.text];
+        [self.userAges addObject:ageFiled.text];
+        [self.userImages addObject:@"jon.jpg"];
+        
+        [self.tbMain reloadData];
+
+    }]];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
 }
 
 @end
