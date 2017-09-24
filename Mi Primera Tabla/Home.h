@@ -10,6 +10,7 @@
 
 @interface Home : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tbMain;
+- (IBAction)btnAddPressed:(id)sender;
 
 
 @end

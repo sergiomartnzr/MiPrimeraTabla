@@ -82,11 +82,10 @@
 #pragma mark - Action methods
 /**********************************************************************************************/
 - (IBAction)btnAddPressed:(id)sender {
-    [self.userNames addObject:@"Walter"];
-    [self.userAges addObject:@"37 años"];
+    [self.userNames addObject:@"Sergio"];
+    [self.userAges addObject:@"25 años"];
     [self.userImages addObject:@"jon.jpg"];
     [self.tbMain reloadData];
 }
-
 
 @end
