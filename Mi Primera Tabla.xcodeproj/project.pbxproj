@@ -14,6 +14,13 @@
 		ED8CD2951F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD2931F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld */; };
 		ED8CD2971F77322300AC8D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2961F77322300AC8D97 /* Assets.xcassets */; };
 		ED8CD29A1F77322300AC8D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2981F77322300AC8D97 /* LaunchScreen.storyboard */; };
+		ED8CD2A71F773A2E00AC8D97 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CD2A51F773A2E00AC8D97 /* cellMainTable.m */; };
+		ED8CD2A81F773A2E00AC8D97 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2A61F773A2E00AC8D97 /* cellMainTable.xib */; };
+		ED8CD2B21F773F0600AC8D97 /* arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2AD1F773F0600AC8D97 /* arya.jpg */; };
+		ED8CD2B31F773F0600AC8D97 /* cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2AE1F773F0600AC8D97 /* cersei.jpg */; };
+		ED8CD2B41F773F0600AC8D97 /* daenerys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2AF1F773F0600AC8D97 /* daenerys.jpg */; };
+		ED8CD2B51F773F0600AC8D97 /* jon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2B01F773F0600AC8D97 /* jon.jpg */; };
+		ED8CD2B61F773F0600AC8D97 /* tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED8CD2B11F773F0600AC8D97 /* tyrion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,14 @@
 		ED8CD2961F77322300AC8D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED8CD2991F77322300AC8D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED8CD29B1F77322300AC8D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8CD2A41F773A2E00AC8D97 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
+		ED8CD2A51F773A2E00AC8D97 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
+		ED8CD2A61F773A2E00AC8D97 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
+		ED8CD2AD1F773F0600AC8D97 /* arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arya.jpg; sourceTree = "<group>"; };
+		ED8CD2AE1F773F0600AC8D97 /* cersei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cersei.jpg; sourceTree = "<group>"; };
+		ED8CD2AF1F773F0600AC8D97 /* daenerys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daenerys.jpg; sourceTree = "<group>"; };
+		ED8CD2B01F773F0600AC8D97 /* jon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon.jpg; sourceTree = "<group>"; };
+		ED8CD2B11F773F0600AC8D97 /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +59,10 @@
 		ED8CD27B1F77322300AC8D97 = {
 			isa = PBXGroup;
 			children = (
+				ED8CD2AC1F773F0600AC8D97 /* imgs */,
 				ED8CD2A11F77324F00AC8D97 /* Main */,
 				ED8CD2A21F77329200AC8D97 /* Controllers */,
+				ED8CD2A31F77391600AC8D97 /* Cells */,
 				ED8CD2861F77322300AC8D97 /* Mi Primera Tabla */,
 				ED8CD2851F77322300AC8D97 /* Products */,
 			);
@@ -96,6 +113,28 @@
 				ED8CD28E1F77322300AC8D97 /* Home.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ED8CD2A31F77391600AC8D97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED8CD2A41F773A2E00AC8D97 /* cellMainTable.h */,
+				ED8CD2A51F773A2E00AC8D97 /* cellMainTable.m */,
+				ED8CD2A61F773A2E00AC8D97 /* cellMainTable.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		ED8CD2AC1F773F0600AC8D97 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				ED8CD2AD1F773F0600AC8D97 /* arya.jpg */,
+				ED8CD2AE1F773F0600AC8D97 /* cersei.jpg */,
+				ED8CD2AF1F773F0600AC8D97 /* daenerys.jpg */,
+				ED8CD2B01F773F0600AC8D97 /* jon.jpg */,
+				ED8CD2B11F773F0600AC8D97 /* tyrion.jpg */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +195,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8CD2B31F773F0600AC8D97 /* cersei.jpg in Resources */,
 				ED8CD29A1F77322300AC8D97 /* LaunchScreen.storyboard in Resources */,
+				ED8CD2B21F773F0600AC8D97 /* arya.jpg in Resources */,
+				ED8CD2B41F773F0600AC8D97 /* daenerys.jpg in Resources */,
 				ED8CD2971F77322300AC8D97 /* Assets.xcassets in Resources */,
+				ED8CD2B51F773F0600AC8D97 /* jon.jpg in Resources */,
 				ED8CD2921F77322300AC8D97 /* Main.storyboard in Resources */,
+				ED8CD2A81F773A2E00AC8D97 /* cellMainTable.xib in Resources */,
+				ED8CD2B61F773F0600AC8D97 /* tyrion.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +217,7 @@
 				ED8CD28F1F77322300AC8D97 /* Home.m in Sources */,
 				ED8CD2951F77322300AC8D97 /* Mi_Primera_Tabla.xcdatamodeld in Sources */,
 				ED8CD28C1F77322300AC8D97 /* AppDelegate.m in Sources */,
+				ED8CD2A71F773A2E00AC8D97 /* cellMainTable.m in Sources */,
 				ED8CD2891F77322300AC8D97 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
