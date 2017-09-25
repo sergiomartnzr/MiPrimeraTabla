@@ -83,22 +83,52 @@
 /**********************************************************************************************/
 - (IBAction)btnAddPressed:(id)sender {
 
-    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Character data"
-                                                                              message: @"Input Chanracter's name and age"
-                                                                       preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Character data" message: @"Input Chanracter's name and age" preferredStyle:UIAlertControllerStyleAlert];
+    
+    //text fields
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"name";
         textField.textColor = [UIColor blueColor];
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         textField.borderStyle = UITextBorderStyleRoundedRect;
     }];
+    
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         textField.placeholder = @"age";
         textField.textColor = [UIColor blueColor];
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         textField.borderStyle = UITextBorderStyleRoundedRect;
     }];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    
+    //Gallery/Photo actions
+    /*
+    UIAlertAction* galleryButton = [UIAlertAction actionWithTitle:@"Gallery" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+     
+        NSLog(@"you pressed gallery button");
+    
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.delegate = self;
+        picker.allowsEditing = false;
+        [self presentViewController:picker animated:YES completion:nil];
+    }];
+    
+    UIAlertAction* cameraButton = [UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        
+        NSLog(@"you pressed camera button");
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }];
+    
+    [alertController addAction:galleryButton];
+    [alertController addAction:cameraButton];
+    */
+    
+    //Save action
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Add" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         NSArray * textfields = alertController.textFields;
         UITextField * nameField = textfields[0];
         UITextField * ageFiled = textfields[1];
@@ -111,9 +141,25 @@
         [self.tbMain reloadData];
 
     }]];
+    //Cancel action
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }]];
+    
     [self presentViewController:alertController animated:YES completion:nil];
-    
-    
 }
+
+
+/*- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    myImage.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    NSURL *imagePath = [info objectForKey:@"UIImagePickerControllerReferenceURL"];
+    
+    NSString *imageName = [imagePath lastPathComponent];
+    
+    NSLog(@"--------------------%@", imageName);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}*/
 
 @end
