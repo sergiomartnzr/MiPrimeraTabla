@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Home : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
-    
-    UIImageView *myImage;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tbMain;
 - (IBAction)btnAddPressed:(id)sender;

@@ -53,15 +53,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zHE-eT-KGw"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="1Fq-N9-T83">
-                                <rect key="frame" x="284" y="612" width="54" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="1Fq-N9-T83" id="TBq-OT-TEm"/>
                         <outlet property="tbMain" destination="S18-X6-nk1" id="ed5-Qr-y4l"/>
                     </connections>
                 </viewController>
